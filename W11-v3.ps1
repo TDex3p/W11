@@ -19,7 +19,7 @@ try {
 
 # Starting the upgrade process
 try {
-    Start-Process -FilePath $UpgradePath -ArgumentList "/Install /MinimizeToTaskbar /QuietInstall /SkipEULA"
+    Start-Process -FilePath $UpgradePath -ArgumentList "/Install /MinimizeToTaskbar /NoRestartUI /QuietInstall /SkipEULA"
     Write-Host "Upgrade process started successfully."
 } catch {
     Write-Host "Error starting process: $_"
